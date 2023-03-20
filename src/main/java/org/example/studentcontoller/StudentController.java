@@ -14,56 +14,56 @@ public class StudentController {
     @Autowired
     private StudentServiceimpl service;
 
-    @RequestMapping("/insertStudentTeacher")
+    @RequestMapping("/insertStudent")
     @ResponseBody
-    public void insertstudentteacher(@RequestBody Student student){
-        service.insertstudentteacher(student);
+    public void insertstudent(@RequestBody Student student){
+        service.insertstudent(student);
     }
-    @RequestMapping("/insertMulStudentTeacher")
+    @RequestMapping("/insertMulStudent")
     @ResponseBody
-    public void insertmulstudentteacher(@RequestBody List<Student> student){
-        service.insertmulstudentteacher(student);
+    public void insertmulstudent(@RequestBody List<Student> student){
+        service.insertmulstudent(student);
     }
-    @RequestMapping("/selectStudentTeacher")
+    @RequestMapping("/selectStudent")
     @ResponseBody
-    public Student selectstudentteacher(@RequestParam int sid,@RequestParam int tid){
-        return service.selectstudentteacher(sid,tid);
+    public Student selectstudent(@RequestParam int id){
+        return service.selectstudent(id);
     }
-    @RequestMapping("/selectMulStudentTeacher")
+    @RequestMapping("/selectMulStudent")
     @ResponseBody
-    public List<Student> selectmulstudentteacher(@RequestParam List<Integer> sid,@RequestParam List<Integer> tid){
-        return service.selectmulstudentteacher(sid,tid);
+    public List<Student> selectmulstudent(@RequestParam List<Integer> ids){
+        return service.selectmulstudent(ids);
     }
-    @RequestMapping("/selectAllStudentTeacher")
+    @RequestMapping("/selectAllStudent")
     @ResponseBody
-    public List<Student> selectallstudentteacher(){
-        return service.selectallstudentteacher();
-    }
-
-    @RequestMapping("/updateStudentTeacher")
-    @ResponseBody
-    public Student updatestudentteacher(@RequestBody Student student){
-        return service.updatestudentteacher(student);
+    public List<Student> selectallstudent(){
+        return service.selectallstudent();
     }
 
-    @RequestMapping("/updateMulStudentTeacher")
+    @RequestMapping("/updateStudent")
     @ResponseBody
-    public List<Student> updatemulstudentteacher(@RequestBody List<Student> student){
-        return service.updatemulstudentteacher(student);
+    public Student updatestudent(@RequestBody Student student){
+        return service.updatestudent(student);
     }
-    @RequestMapping("/deleteStudentTeacher")
+
+    @RequestMapping("/updateMulStudent")
     @ResponseBody
-    public Boolean deletestudentteacher(@RequestParam int sid,@RequestParam int tid){
-        return service.deletestudentteacher(sid,tid);
+    public List<Student> updatemulstudent(@RequestBody List<Student> student){
+        return service.updatemulstudent(student);
     }
-    @RequestMapping("/deleteMulStudentTeacher")
+    @RequestMapping("/deleteStudent")
     @ResponseBody
-    public List<Boolean> deletemulstudentteacher(@RequestParam List<Integer> sid,@RequestParam List<Integer> tid){
-        return service.deletemulstudentteacher(sid,tid);
+    public Boolean deletestudent(@RequestParam int id){
+        return service.deletestudent(id);
     }
-    @RequestMapping("/deleteAllStudentTeacher")
+    @RequestMapping("/deleteMulStudent")
     @ResponseBody
-    public Boolean deleteallstudentteacher(){
-        return service.deleteallstudentteacher();
+    public List<Boolean> deletemulstudent(@RequestParam List<Integer> ids){
+        return service.deletemulstudent(ids);
+    }
+    @RequestMapping("/deleteAllStudent")
+    @ResponseBody
+    public Boolean deleteallstudent(){
+        return service.deleteallstudent();
     }
 }

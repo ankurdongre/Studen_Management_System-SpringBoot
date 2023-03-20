@@ -8,7 +8,11 @@
         <outputRelativeToContentRoot value="true" />
         <module name="Studen_Management_System error" />
         <module name="Student_Management_System(SpringBoot)" />
+        <module name="Studen_Management_System" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="Student_Management_System" target="1.8" />
+    </bytecodeTargetLevel>
   </component>
 </project>

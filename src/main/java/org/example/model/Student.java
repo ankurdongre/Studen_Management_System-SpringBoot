@@ -3,8 +3,6 @@ package org.example.model;
 public class Student {
     int id;
     String name,email;
-    Teacher teacher;
-
 
     public void setId(int id){
         this.id= id;
@@ -15,9 +13,6 @@ public class Student {
     public void setEmail(String email){
         this.email = email;
     }
-    public void setTeacher(Teacher teacher){
-        this.teacher = teacher;
-    }
     public int getId(){
         return id;
     }
@@ -27,7 +22,5 @@ public class Student {
     public String getEmail(){
         return email;
     }
-    public Teacher getTeacher(){
-        return teacher;
-    }
+
 }
