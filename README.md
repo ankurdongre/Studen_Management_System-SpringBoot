@@ -1,5 +1,5 @@
 # Student_Management_System-SpringBoot
-This project is for managing the data of the student as well as teacher.
+This project is for managing the data of the student.
 This project require some application/software to run it.
 The application necessary to install are as follows:-
 a. IntelliJ Idea, 
@@ -16,7 +16,7 @@ start the Apache and MySQL server from the xampp.
 open the MySQL Admin page by clicking on admin button. 
 the new window is open in your default Browser. 
 create a new database name as "teststudent". 
-inside it create new tables name as "student" and "teacher".
+inside it create new tables name as "student".
 
 Run the code from the IntelliJ Idea.
 
